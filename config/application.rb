@@ -33,6 +33,7 @@ module Zipsell
     config.paperclip_defaults = {
       storage: :s3,
       s3_permissions: 'private',
+      url: ':s3_domain_url',
       s3_region: ENV['AWS_REGION'],
       s3_credentials: {
         bucket: ENV['AWS_BUCKET'],
