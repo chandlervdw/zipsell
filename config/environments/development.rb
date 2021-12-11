@@ -40,9 +40,7 @@ Rails.application.configure do
     address:              ENV['SMTP_host'],
     port:                 ENV['SMTP_port'],
     user_name:            ENV['SMTP_username'],
-    password:             ENV['SMTP_password'],
-    :authentication       => "plain",
-    :enable_starttls_auto => true
+    password:             ENV['SMTP_password']
   }
 
   # Print deprecation notices to the Rails logger.
