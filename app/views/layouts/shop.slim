@@ -31,15 +31,7 @@ html
         .level-left
           .level-item 
             p.is-size-5
-              a href="#{root_path}" #{ENV['shop_name']}
-        .level-right
-          .level-item 
-            = search_form_for @q, :url => root_path do |f|
-              .field.has-addons
-                .control
-                  = f.search_field :name_cont, :class => "input", :placeholder => "Search #{ENV['shop_name']}"
-                .control
-                  button.button.is-info Search
+              a href="#{ENV['header_url']}" target="_blank" #{ENV['shop_name']}
 
     = render "layouts/notifications"
     = yield
