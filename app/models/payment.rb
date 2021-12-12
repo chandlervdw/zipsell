@@ -42,7 +42,7 @@ class Payment < ApplicationRecord
         ApplicationMailer.customer_new_payment(self.id).deliver
 
         #send email to admin
-        ApplicationMailer.admin_new_payment(self.id).deliver
+        # ApplicationMailer.admin_new_payment(self.id).deliver
       end
     rescue => ex
       #logger.error ex.message
